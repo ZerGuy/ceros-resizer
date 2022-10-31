@@ -1,0 +1,40 @@
+.resizer-wrapper {
+    position: relative;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 20px;
+    padding: 5px;
+}
+
+.resizer-handle {
+    position: absolute;
+    cursor: row-resize;
+    height: 20px;
+    width: 20px;
+}
+
+.resizer-handle-x {
+    right: -4px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    cursor: ew-resize;
+    border: 5px solid transparent;
+}
+
+.resizer-handle-y {
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 100%;
+    cursor: ns-resize;
+    border: 5px solid transparent;
+}
+
+.resizer-handle-xy {
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+
