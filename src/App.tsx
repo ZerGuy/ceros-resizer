@@ -1,26 +1,34 @@
-import React from 'react';
-import './App.css';
-import {Resizer} from "./resizer";
+import React from "react";
+import "./App.css";
+import { Resizer } from "./resizer";
 
 function App() {
   return (
     <main>
-      <Resizer>
-        <div className="content">
-          kek cheburek
+      <div className="row">
+        <Resizer>
           <div>
             kek cheburek
+            <div>kek cheburek</div>
           </div>
-        </div>
-      </Resizer>
-      <Resizer>
-        <div>
-          lol kek cheburek
-        </div>
-        <div>
-          lol kek cheburek
-        </div>
-      </Resizer>
+        </Resizer>
+        <Resizer>
+          <div>lol kek cheburek</div>
+          <div>lol kek cheburek</div>
+        </Resizer>
+      </div>
+      <div className="row">
+        <Resizer>
+          <div>
+            kek cheburek
+            <div>kek cheburek</div>
+          </div>
+        </Resizer>
+        <Resizer>
+          <div>lol kek cheburek</div>
+          <div>lol kek cheburek</div>
+        </Resizer>
+      </div>
     </main>
   );
 }
