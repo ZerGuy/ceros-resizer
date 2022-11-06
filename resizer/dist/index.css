@@ -1,0 +1,42 @@
+.resizer-wrapper {
+    position: relative;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.resizer-handle {
+    position: absolute;
+    cursor: row-resize;
+}
+
+.resizer-handle-x {
+    right: -6px;
+    top: 0;
+    height: calc(100% - 10px);
+    width: 1px;
+    cursor: ew-resize;
+    border: 6px solid transparent;
+}
+
+.resizer-handle-y {
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 1px;
+    width: calc(100% - 10px);
+    cursor: ns-resize;
+    border: 6px solid transparent;
+}
+
+.resizer-handle-xy {
+    bottom: -4px;
+    right: -4px;
+    cursor: se-resize;
+    z-index: 1;
+    height: 12px;
+    width: 12px;
+}
+
